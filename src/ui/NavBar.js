@@ -10,7 +10,10 @@ const NavBar = () => {
                     <a className="navbar-brand" href="#">
                         <img src={logo} width="150" height="40"  className="d-inline-block align-top" alt="economizze.me"/>
                     </a>
-    
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="NavbarN" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav">
                             <li className="nav-item active">
@@ -23,18 +26,12 @@ const NavBar = () => {
                                 <a className="nav-link" href="#">Ajuda</a>
                             </li>
                         </ul>
-                        
                         <form class="form-inline my-2 my-lg-0">
-                            <button type="button" class="btn btn-outline-success my-2 my-sm-0 "href="#">Comece agora</button> 
+                            <button type="button" class="btn btn-outline-success my-2 my-sm-0 btn-sm "href="#">Comece agora</button> 
                         </form>
-
                     </div>
                 </div>
             </nav> 
-          
-
-
-
     );
 };
 

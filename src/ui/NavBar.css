@@ -7032,7 +7032,7 @@ navbar-brand .navbar-brand:hover {
 
 .navbar .nav-item a {
   color: #29F85A !important;
-  font-family: 'Lexend Deca, Roboto', sans-serif !important; }
+  font-family: 'Lexend Deca', sans-serif !important; }
 
 .navbar .nav-item a:hover {
   color: #3B3B3B !important;
@@ -7045,11 +7045,11 @@ navbar-brand .navbar-brand:hover {
   color: #29F85A !important;
   border-color: #29F85A !important;
   border-radius: 50px;
-  border-width: 2.5px; }
+  border-width: 2px; }
 
 .btn:hover {
   background-color: #29F85A;
   color: #fff !important; }
 
 .navbar .btn {
-  font-weight: 670; }
+  font-weight: 650; }

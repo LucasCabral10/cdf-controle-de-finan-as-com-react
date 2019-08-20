@@ -7023,19 +7023,16 @@ a.text-dark:hover, a.text-dark:focus {
 .navbar {
   margin-top: 20px; }
 
-navbar-brand .navbar-brand:hover {
+.navbar-brand:hover {
   color: #3B3B3B !important; }
 
-.navbar .navbar-nav {
-  margin: 0 auto;
-  padding: 10 0; }
-
 .navbar .nav-item a {
-  color: #29F85A !important;
+  margin-right: 10px;
+  color: #707070 !important;
   font-family: 'Lexend Deca', sans-serif !important; }
 
 .navbar .nav-item a:hover {
-  color: #3B3B3B !important;
+  color: #29F85A !important;
   transition: .3s; }
 
 .top-nav-collapse {
@@ -7045,11 +7042,17 @@ navbar-brand .navbar-brand:hover {
   color: #29F85A !important;
   border-color: #29F85A !important;
   border-radius: 50px;
-  border-width: 2px; }
+  border-width: 1.5px; }
 
 .btn:hover {
   background-color: #29F85A;
   color: #fff !important; }
 
 .navbar .btn {
-  font-weight: 650; }
+  font-weight: 600; }
+
+.navbar-toggler {
+  border: none !important; }
+
+.show {
+  margin-left: 8px; }

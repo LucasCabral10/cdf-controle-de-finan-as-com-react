@@ -1,16 +1,18 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './App.css';
-import Home from'./Home'
+import Routes from './routes';
+import { library, fab } from '@fortawesome/fontawesome-svg-core';
+import { faFacebook, faGoogle,  } from '@fortawesome/free-brands-svg-icons'
 
 
-class App extends Component {
-  render(){
+library.add(faFacebook,  faGoogle, );
+
+function App() {
     return (
-      <div>
-        <Home />
-      </div>
+        <Routes />
     );
   };  
-};
+
+  
 
 export default App;

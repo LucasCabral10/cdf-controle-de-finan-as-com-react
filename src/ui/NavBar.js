@@ -1,38 +1,65 @@
-import React from 'react';
 import './NavBar.css';
 import logo from './assets/logo.svg';
 
+import React from 'react';
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  Container,
+  Button} from 'reactstrap';
 
-const NavBar = () => {
-    return (    
-            <nav className="navbar navbar-expand-lg navbar-light bg-ligth scrolling-navbar fixed-top">
-                <div className='container'>   
-                    <a className="navbar-brand" href="#">
-                        <img src={logo} width="170" height="40"  className="d-inline-block align-top" alt="economizze.me"/>
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="NavbarN" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+import {Link} from 'react-router-dom';
 
-                    <div className="collapse navbar-collapse" id="navbarNav">
-                        <ul className="navbar-nav ml-auto">
-                            <li className="nav-item active">
-                                <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Planos</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Ajuda</a>
-                            </li>
-                        </ul>
-                        <form class="form-inline my-2 my-lg-0">
-                            <button type="button" class="btn btn-outline-success my-2 my-sm-0 btn-sm "href="#">Comece agora</button> 
-                        </form>
-                    </div>
-                </div>
-            </nav> 
-    );
-};
+class NaVbar extends React.Component {
+  constructor(props) {
+        super(props);
 
-export default NavBar;
+        this.toggle = this.toggle.bind(this);
+        this.state = {
+        isOpen: false
+        };
+    }
+    toggle() {
+        this.setState({
+        isOpen: !this.state.isOpen
+        });
+    }
+    render() {
+        return (
+       
+                <Navbar  fixed={`top`}className="navbar"  expand="md" >
+                     <Container >
+                    <NavbarBrand href="/"><img src={logo} width="170" height="40"  className="d-inline-block align-top" alt="economizze.me"/></NavbarBrand>
+                    <NavbarToggler onClick={this.toggle} />
+                    <Collapse isOpen={this.state.isOpen} navbar>
+                        <Nav className="ml-auto" navbar>
+                        <NavItem>
+                            <NavLink tag={Link} to="/">Inicio</NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink tag={Link} to="/Planos">Planos</NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink href="">Ajuda</NavLink>
+                        </NavItem>
+                        </Nav>
+                        <Button className="btn-verde-borda" outline color="verde" tag={Link} to="/Login">Entrar</Button>{' '}
+                    </Collapse>
+                     </Container>
+                </Navbar>
+            
+        );
+    }
+    }
+    
+
+  export default NaVbar;

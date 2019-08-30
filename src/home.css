@@ -1,0 +1,45 @@
+
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black&display=swap');
+
+.center {
+    width: 300px;
+    margin-top: 290px;
+}
+
+.display-5{
+    font-size: 45px;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.btn-verde{
+    color: #fff !important;
+    background-color:  #29F85A !important;
+    border-color: #29F85A !important;
+    margin-top: 5px;
+    font-family: 'Open sans', sans-serif !important;
+}
+
+.btn-verde:hover{
+    transition: .3s;
+    background-color: #707070 !important;
+    border-color: #707070 !important;
+}
+
+
+.btn-link{
+    color: #707070 !important;
+    margin-left: 10px;
+    font-family: 'Open sans', sans-serif !important;
+    text-decoration: none !important;
+}
+
+
+.fa-chevron-down{
+    color: #707070 !important;
+}
+
+.cell-home{
+    transform: translate(20%, -25%);
+}
+
+
